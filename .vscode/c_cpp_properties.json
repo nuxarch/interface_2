@@ -10,16 +10,14 @@
             "includePath": [
                 "/home/nuxarch/4KULIAH/3D_TOE/ModuleMCU/include",
                 "/home/nuxarch/4KULIAH/3D_TOE/ModuleMCU/src",
-                "/home/nuxarch/4KULIAH/3D_TOE/ModuleMCU/.pio/libdeps/megaatmega2560/MD_Parola/src",
                 "/home/nuxarch/4KULIAH/3D_TOE/ModuleMCU/.pio/libdeps/megaatmega2560/LiquidCrystal_I2C",
                 "/home/nuxarch/4KULIAH/3D_TOE/ModuleMCU/.pio/libdeps/megaatmega2560/PinChangeInterrupt/src",
                 "/home/nuxarch/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
                 "/home/nuxarch/.platformio/packages/framework-arduino-avr/cores/arduino",
                 "/home/nuxarch/.platformio/packages/framework-arduino-avr/variants/mega",
-                "/home/nuxarch/4KULIAH/3D_TOE/ModuleMCU/.pio/libdeps/megaatmega2560/MD_MAX72XX/src",
-                "/home/nuxarch/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
                 "/home/nuxarch/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
                 "/home/nuxarch/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "/home/nuxarch/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
                 "/home/nuxarch/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
                 ""
             ],
@@ -28,16 +26,14 @@
                 "path": [
                     "/home/nuxarch/4KULIAH/3D_TOE/ModuleMCU/include",
                     "/home/nuxarch/4KULIAH/3D_TOE/ModuleMCU/src",
-                    "/home/nuxarch/4KULIAH/3D_TOE/ModuleMCU/.pio/libdeps/megaatmega2560/MD_Parola/src",
                     "/home/nuxarch/4KULIAH/3D_TOE/ModuleMCU/.pio/libdeps/megaatmega2560/LiquidCrystal_I2C",
                     "/home/nuxarch/4KULIAH/3D_TOE/ModuleMCU/.pio/libdeps/megaatmega2560/PinChangeInterrupt/src",
                     "/home/nuxarch/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
                     "/home/nuxarch/.platformio/packages/framework-arduino-avr/cores/arduino",
                     "/home/nuxarch/.platformio/packages/framework-arduino-avr/variants/mega",
-                    "/home/nuxarch/4KULIAH/3D_TOE/ModuleMCU/.pio/libdeps/megaatmega2560/MD_MAX72XX/src",
-                    "/home/nuxarch/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
                     "/home/nuxarch/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
                     "/home/nuxarch/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "/home/nuxarch/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
                     "/home/nuxarch/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
                     ""
                 ]
