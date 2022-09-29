@@ -1,29 +1,29 @@
 #include <Arduino.h>
-#include "LiquidCrystal_I2C.h"
-#include "PinChangeInterrupt.h"
-#include "led.h"
-#include "switch.h"
-#include "potensio.h"
-#include "motorDC.h"
+
+#include <MD_Parola.h>
+#include <MD_MAX72xx.h>
+#include <SPI.h>
+
+#define HARDWARE_TYPE MD_MAX72XX::FC16_HW
+#define MAX_DEVICES 4
+
+#define CLK_PIN 13
+#define DATA_PIN 11
+#define CS_PIN 10
+
+// Arbitrary output pins
+MD_Parola P = MD_Parola(HARDWARE_TYPE, DATA_PIN, CLK_PIN, CS_PIN, MAX_DEVICES);
 
 void setup()
 {
   Serial.begin(115200);
-  motorDC_init();
-  konfig_switch();
+  P.begin();
 }
 
 void loop()
 {
-  // baca pot
-  int16_t pot = analogRead(PIN_POT1);
-  uint8_t speed_val = map(pot, 0, 1023, 0,255);
-  Serial.println("speed ="+String(map(speed_val,0,255,0,100)));
-  // baca status switch 
-  if (bacaSemuaSwitch() == 1){
-    // maka putar cw
-    setSpeed(speed_val);
-  }else{
-    motor_off();
-  }  
+  if (P.displayAnimate())
+    P.displayText(" => ", PA_CENTER, 200, 1000, PA_SCROLL_UP, PA_SCROLL_UP);
+  P.setZoneEffect(0, true, PA_FLIP_LR);
+  P.setZoneEffect(0, true, PA_FLIP_UD);
 }
