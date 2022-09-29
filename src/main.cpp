@@ -10,17 +10,20 @@ void setup()
 {
   Serial.begin(115200);
   motorDC_init();
-  
+  konfig_switch();
 }
 
 void loop()
 {
-  putarCW();
-  delay(1000);
-  motor_off();
-  delay(1000);
-  putarCCW();
-  delay(1000);
-
-
+  // baca pot
+  int16_t pot = analogRead(PIN_POT1);
+  uint8_t speed_val = map(pot, 0, 1023, 0,255);
+  Serial.println("speed ="+String(map(speed_val,0,255,0,100)));
+  // baca status switch 
+  if (bacaSemuaSwitch() == 1){
+    // maka putar cw
+    setSpeed(speed_val);
+  }else{
+    motor_off();
+  }  
 }

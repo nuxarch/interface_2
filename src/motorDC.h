@@ -31,5 +31,12 @@ void putarCW(){
 void motor_off(){
   digitalWrite(PIN_EN, LOW);
 }
+void setSpeed(int speed){
+  digitalWrite(PIN_EN, HIGH);
+  // 0->255 ===> 0 s/d 100%
+  analogWrite(PIN_IN1, speed);
+  digitalWrite(PIN_IN2, LOW);
+
+}
 
 #endif
